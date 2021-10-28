@@ -12,25 +12,135 @@
     <header class="header">
       <a class="back-button" href="/index.html">⬅</a>
       <h1>План урока: Github, Условные и логические операторы и циклы</h1>
-      <button>BUTTON</button>
     </header>
+    <div class="q">23</div>
+    <div class="w">34</div>
+    <div id="uniq">Уникальный</div>
     <section class="conditional">
       <h2>Условные операторы</h2>
       <div class="conditional__result"></div>
       <strong class="title">if / else / else if / ?</strong>
       <!-- ---- -->
+      <p>0, "", null, undefined, NaN = false</p>
+      <p>Всё остальное = true</p>
+      <pre>
+        <code>
+          if(0) {
+            alert("false")
+          }
+          if(213) {
+            alert("true")
+          }
+        </code>
+      </pre>
+      <pre>
+        <code>
+          let result = условие ? true : false
+          let age = 20
+          let продажаСигарет
+          продажаСигарет = (age > 18) ? "продаем" : "ты ещё мал"
+          if(age > 18) {
+            продажаСигарет = "продаем"
+          } else {
+            продажаСигарет = "ты ещё мал"
+          }
+        </code>
+      </pre>
     </section>
     <section class="conditional">
       <h2>Логические операторы</h2>
       <div class="conditional__result"></div>
       <strong class="title">|| / && / ! </strong>
       <!-- ---- -->
+      || - или true || false = true
+      <pre>
+        <code>
+          let hour = 9;
+          if (hour < 10 || hour > 18) {
+            alert("Офис закрыт")
+          } 
+          console.log('Это случилось')
+        </code>
+      </pre>
+      && - и true && true = true true && false = false
+      <pre>
+        <code>
+          let hour = 12
+          let min = 30
+          let sec = 20
+          if ((hour == 12 && min == 30) || sec == 10) {
+            console.log(true)
+          } else {
+            console.log(false)
+          }
+        </code>
+      </pre>
+      ! - НЕ
+      <div class="ne-test">
+        true
+      </div>
+      <div>
+        <input type="text" class="ne-input">
+        <div class="ne-input__value">тут</div>
+      </div>
+      <pre>
+        <code>
+          let a = true
+          let antia = !a // -> (false)
+          if(antia === !a) {
+            console.log(true)
+          }
+          // !0 = true
+          // !123123123123123 = false
+        </code>
+      </pre>
     </section>
     <section class="loop">
       <h2>ЦИКЛЫ</h2>
       <strong class="title">while / do..while / for </strong>
       <div class="loop__result"></div>
       <!-- ---- -->
+      <strong>while</strong>
+      <pre>
+        <code>
+          let i = 0
+          while (i < 3) {
+            console.log(i)
+            i * 2
+          }
+        </code>
+      </pre>
+      <strong>do..while</strong>
+      <pre>
+        <code>
+          let i = 0
+          do {
+            console.log(i)
+            i++
+          } while (i < 3)
+        </code>
+      </pre>
+      <strong>for</strong>
+      <pre>
+        <code>
+          for(начало; условие; шаг)
+          for(let i = 1; i < 3; i * 2) {
+            console.log(i)
+          }
+        </code>
+      </pre>
+      <strong>break</strong>
+      <pre>
+        <code>
+          let sum = 0
+          while (true) {
+            let value = +prompt("Введите число", "")
+            if(!value) break;
+            sum += value
+          }
+          console.log(sum)
+        </code>
+      </pre>
     </section>
 
     <script src="./common.js"></script>
