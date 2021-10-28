@@ -30,10 +30,10 @@ function paste() {
 input.addEventListener('change', (event) => {
   inputValue.innerText += input.value
 })
-let sum = 0
-while (true) {
-  let value = +prompt('Введите число', '')
-  if (!value) break
-  sum += value
-}
-console.log(sum)
+// let sum = 0
+// while (true) {
+//   let value = +prompt('Введите число', '')
+//   if (!value) break
+//   sum += value
+// }
+// console.log(sum)
