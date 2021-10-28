@@ -5,6 +5,18 @@
   margin: 0;
   background-color: rgb(241, 241, 241);
 }
+pre,
+code {
+  font-family: "Courier New", "Courier", monospace;
+  color: #6a2cce;
+}
+h2 {
+  text-transform: uppercase;
+}
+.title {
+  font-family: "Courier New", "Courier", monospace;
+  font-size: 16px;
+}
 .header {
   border-bottom: 1px solid #f0f0f0;
   background-color: #ffd829;
